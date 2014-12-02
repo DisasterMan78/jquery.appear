@@ -85,6 +85,10 @@
       }
       selectors.push(selector);
       return $(selector);
+    },
+    destroy: function() {
+
+      this.unbind('appear');
     }
   });
 
